@@ -1,0 +1,11 @@
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__item {
+  margin-left: 44px;
+  &:last-child {
+    margin-left: 264px;
+  }
+}

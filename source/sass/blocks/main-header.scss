@@ -1,0 +1,30 @@
+.main-header {
+  padding-top: 55px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $basic-grey;
+}
+
+.main-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__cart {
+  position: relative;
+  margin-left: 64px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 98px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/icon/cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
