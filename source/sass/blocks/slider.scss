@@ -2,3 +2,37 @@
   min-height: 425px;
   background-color: $basic-grey;
 }
+
+.slide {
+  background-image: url(../../img/nerds-index-slide1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slide__content {
+  padding-bottom: 73px;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(3) {
+  display: none;
+}
+
+.slide__title {
+  padding-top: 73px;
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide__description {
+  padding-bottom: 36px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slider-controls {
+  position: absolute;
+}

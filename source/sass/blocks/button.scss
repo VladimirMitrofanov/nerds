@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  height: 50px;
+  min-width: 160px;
+  padding: 15px 54px;
+  border-radius: 3px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.button--red {
+  background-color: $basic-red;
+  width: 240px;
+}
