@@ -12,15 +12,33 @@
 .button--red {
   background-color: $basic-red;
   width: 240px;
+  &:hover  {
+    background-color: red;
+  }
+  &:active {
+    box-shadow: inset 2px 2px 5px rgba(19, 18, 18, 0.5), 1px 1px 5px rgba(255, 255, 255, 1),2px 2px 5px rgba(19, 18, 18, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  }
 }
 
 .button--green {
   width: 160px;
   background-color: $basic-green;
+  &:hover  {
+    background-color: green;
+  }
+  &:active {
+    box-shadow: inset 2px 2px 5px rgba(19, 18, 18, 0.5), 1px 1px 5px rgba(255, 255, 255, 1),2px 2px 5px rgba(19, 18, 18, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  }
 }
 
 .button--yellow {
   width: 160px;
   background-color: $basic-yellow;
+  &:hover  {
+    background-color: rgb(209, 209, 125);
+  }
+  &:active {
+    box-shadow: inset 2px 2px 5px rgba(19, 18, 18, 0.5), 1px 1px 5px rgba(255, 255, 255, 1),2px 2px 5px rgba(19, 18, 18, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  }
 }
 

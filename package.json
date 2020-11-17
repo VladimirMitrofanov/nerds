@@ -21,6 +21,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "node-sass": "^4.14.1",
+    "panini": "^1.7.1",
     "postcss": "^8.1.7",
     "posthtml-include": "^1.4.3",
     "stylelint": "10.1.x",
