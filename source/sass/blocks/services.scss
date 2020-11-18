@@ -1,6 +1,17 @@
 .services {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  width: 1158px;
+  height: 2px;
+  bottom: 0px;
+  left: 141px;
+  background-color: $basic-grey;
 }
 
 .services__image {

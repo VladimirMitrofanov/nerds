@@ -1,0 +1,101 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 73px;
+  margin-bottom: 73px;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  width: 1158px;
+  height: 2px;
+  bottom: -72px;
+  left: 141px;
+  background-color: $basic-grey;
+}
+
+.about__title {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about__desc {
+  margin-bottom: 40px;
+}
+
+.about__title-services {
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about__list {
+  margin-left: 37px;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__item::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+  left: -35px;
+  background-color: red;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.about__img {
+  margin-top: -32px;
+  margin-bottom: 37px;
+  width: 360px;
+  height: 208px;
+  background-image: url(../../img/about-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.about__table-title {
+  margin-bottom: 31px;
+  margin-left: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about__table th {
+  position: relative;
+  margin-left: 17px;
+  font-size: 45px;
+  line-height: 64px;
+  text-align: right;
+}
+
+.about__table th::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 1px;
+  right:1px;
+  z-index: 10;
+  background-image: url(../../img/procent.png);
+  background-repeat: no-repeat;
+}
+
+.about__table td {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.column:nth-child(2) {
+  margin-left: 120px;
+}

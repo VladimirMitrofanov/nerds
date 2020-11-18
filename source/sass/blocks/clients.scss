@@ -1,0 +1,21 @@
+.clients {
+  position: relative;
+  padding-top: 46px;
+  margin-bottom: 118px;
+}
+
+.clients::after {
+  content: '';
+  position: absolute;
+  width: 1158px;
+  height: 2px;
+  bottom: -38px;
+  left: 141px;
+  background-color: $basic-grey;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
