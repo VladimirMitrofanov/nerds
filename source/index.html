@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Размека </title>
+  <link rel="icon" href="img/icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
 </head>
 <body>
   <!-- Шапкка -->
@@ -33,47 +35,47 @@
 <main class="page-main">
   <h1 class="visually-hidden">Сайт дизайн-студии «Нёрдс»</h1>
 <!-- Slider -->
-  <div class="page-main__slider slider">
+  <div class="page-main__slider slider ">
     <div class="container">
-      <ul class="slider__list">
-        <li class="slider__list-item slider__list-item--current slide">
-          <div class="slide__content">
-            <p class="slide__title">Долго, дорого, <br>скрупулезно</p>
+      <div class=" swiper-container">
+        <ul class="slider__list swiper-wrapper">
+          <li class="slider__list-item slider__list-item--current slide swiper-slide">
+            <div class="slide__content">
+              <p class="slide__title">Долго, дорого, <br>скрупулезно</p>
 
-            <p class="slide__description">Математически выверенный дизайн
-              <br>для вашего сайта, или мобильного приложения.</p>
+              <p class="slide__description">Математически выверенный дизайн
+                <br>для вашего сайта, или мобильного приложения.</p>
 
-            <a class="button button--red slide__button" href="#">Узнать больше</a>
-          </div>
-        </li>
-        <li class="slider__list-item slide">
-          <div class="slide__content">
-            <p class="slide__title">Любим математику, как никто другой</p>
+              <a class="button button--red slide__button" href="#">Узнать больше</a>
+            </div>
+          </li>
+          <li class="slider__list-item slide swiper-slide">
+            <div class="slide__content">
+              <p class="slide__title">Любим математику,<br> как никто другой</p>
 
-            <p class="slide__description">Никакого креатива, только математические формулы<br>для расчета идеальных
-              пропорций.
-            </p>
+              <p class="slide__description">Никакого креатива, только математические формулы<br>для расчета идеальных
+                пропорций.
+              </p>
 
-            <a class="button button--red slide__button" href="blank.html">Узнать больше</a>
-          </div>
-        </li>
-        <li class="slider__list-item slide">
-          <div class="slide__content">
-            <p class="slide__title">Только ночь,<br>только хардкор</p>
+              <a class="button button--red slide__button" href="blank.html">Узнать больше</a>
+            </div>
+          </li>
+          <li class="slider__list-item slide swiper-slide">
+            <div class="slide__content">
+              <p class="slide__title">Только ночь,<br>только хардкор</p>
 
-            <p class="slide__description">Работать днем, как все? Мы против этого.
-              <br>Ближе к полуночи работа только начинается.</p>
+              <p class="slide__description">Работать днем, как все? Мы против этого.
+                <br>Ближе к полуночи работа только начинается.</p>
 
-            <a class="button button--red slide__button" href="blank.html">Узнать больше</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+              <a class="button button--red slide__button" href="blank.html">Узнать больше</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-pagination">
 
-    <div class="slider__controls slider-controls">
-      <button class="slider-controls__button slider-controls__button--current" aria-label="1"></button>
-      <button class="slider-controls__button" aria-label="2"></button>
-      <button class="slider-controls__button" aria-label="3"></button>
+      </div>
+
     </div>
   </div>
   <!-- End Slider -->
@@ -147,7 +149,7 @@
 <footer class="main-footer">
   <div class="main-footer__map">
     <div style="position:relative;overflow:hidden;">
-      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.392812%2C59.947963&utm_medium=mapframe&utm_source=maps&z=13.11" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUAZ4GRdA" width=100% height="416" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"  style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.392812%2C59.947963&utm_medium=mapframe&utm_source=maps&z=13.11" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUAZ4GRdA" width=100% height="416" c frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
     </div>
   </div>
   <div class="main-footer__social container">
@@ -162,5 +164,33 @@
     </div>
   </div>
 </footer>
+<!-- Initialize Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script>
+
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+    delay: 3000,
+    },
+
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //   },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '</span>';
+        },
+      },
+  });
+
+
+
+</script>
 </body>
 </html>

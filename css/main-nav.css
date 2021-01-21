@@ -1,0 +1,10 @@
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav__list {
+  margin-left: 202px;
+}
+/*# sourceMappingURL=main-nav.css.map */
